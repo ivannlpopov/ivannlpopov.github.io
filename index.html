@@ -253,7 +253,133 @@
       font-size: 18px;
     }
 
-    /* RESULTS */
+/* BRAND IN THE CITY */
+
+.brand-city {
+  margin-bottom: 120px;
+}
+
+.brand-city-intro {
+  display: grid;
+  grid-template-columns: 0.55fr 1.45fr;
+  gap: 80px;
+  margin: 40px 0 70px;
+}
+
+.brand-city-intro h3 {
+  font-size: clamp(36px, 4vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  max-width: 850px;
+}
+
+.brand-city-intro p {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #b8b8b8;
+  max-width: 620px;
+  align-self: end;
+}
+
+.visual-block {
+  margin: 0 0 28px;
+}
+
+.visual-block img,
+.gallery-two img,
+.gallery-single img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.visual-block img {
+  border-radius: 2px;
+}
+
+.visual-caption {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr 1fr;
+  gap: 40px;
+  padding: 22px 0 70px;
+  border-top: 1px solid #444;
+}
+
+.visual-caption span,
+.visual-section-heading span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #777;
+}
+
+.visual-caption strong {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.visual-caption p {
+  font-size: 16px;
+  line-height: 1.55;
+  color: #aaa;
+  max-width: 420px;
+}
+
+.gallery-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.gallery-single {
+  margin-bottom: 95px;
+}
+
+.visual-section-heading {
+  display: grid;
+  grid-template-columns: 0.55fr 1fr 1fr;
+  gap: 50px;
+  padding: 70px 0 35px;
+  border-top: 1px solid #444;
+}
+
+.visual-section-heading h3 {
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.visual-section-heading p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #aaa;
+  max-width: 430px;
+}
+
+@media (max-width: 800px) {
+  .brand-city-intro,
+  .visual-caption,
+  .visual-section-heading,
+  .gallery-two {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-city-intro,
+  .visual-caption,
+  .visual-section-heading {
+    gap: 24px;
+  }
+
+  .gallery-two {
+    gap: 12px;
+  }
+
+  .gallery-single {
+    margin-bottom: 60px;
+  }
+}    /* RESULTS */
 
     .results {
       padding-top: 20px;
@@ -605,7 +731,128 @@
           </div>
 
         </div>
+<!-- BRAND IN THE CITY -->
 
+<section class="brand-city">
+
+  <div class="section-label">
+    Brand in the City
+  </div>
+
+  <div class="brand-city-intro">
+    <h3>From brand strategy to a complete urban communication system.</h3>
+    <p>
+      I extended the identity beyond conventional advertising into a flexible
+      system of brand touchpoints across outdoor media, public transport,
+      transit infrastructure and branded merchandise.
+    </p>
+  </div>
+
+  <div class="visual-block">
+    <img
+      src="images/moscow-residence/hero.png"
+      alt="Moscow Residence brand campaign"
+    >
+  </div>
+
+  <div class="visual-caption">
+    <span>Outdoor Campaign</span>
+    <strong>The City Starts Here</strong>
+    <p>
+      Turning the brand symbol into a window onto a new urban life.
+    </p>
+  </div>
+
+  <div class="gallery-two">
+    <img
+      src="images/moscow-residence/outdoor (1).png"
+      alt="Moscow Residence outdoor advertising"
+    >
+    <img
+      src="images/moscow-residence/outdoor (2).png"
+      alt="Moscow Residence billboard campaign"
+    >
+  </div>
+
+  <div class="gallery-single">
+    <img
+      src="images/moscow-residence/outdoor (3).png"
+      alt="Moscow Residence outdoor campaign execution"
+    >
+  </div>
+
+  <div class="visual-section-heading">
+    <span>Transport</span>
+    <h3>A brand that moves with the city.</h3>
+    <p>
+      Electric buses and metro trains turned everyday journeys into repeated
+      brand encounters across Moscow.
+    </p>
+  </div>
+
+  <div class="visual-block">
+    <img
+      src="images/moscow-residence/electrobus.png"
+      alt="Moscow Residence branded electric bus"
+    >
+  </div>
+
+  <div class="visual-block">
+    <img
+      src="images/moscow-residence/metro.png"
+      alt="Moscow Residence metro branding"
+    >
+  </div>
+
+  <div class="visual-section-heading">
+    <span>Everyday Touchpoints</span>
+    <h3>From media to everyday objects.</h3>
+    <p>
+      The brand extended into the everyday infrastructure of the city,
+      creating repeated physical contact beyond traditional advertising.
+    </p>
+  </div>
+
+  <div class="visual-block">
+    <img
+      src="images/moscow-residence/card.png"
+      alt="Moscow Residence Troika transport card"
+    >
+  </div>
+
+  <div class="gallery-two">
+    <img
+      src="images/moscow-residence/bus-stop (1).png"
+      alt="Moscow Residence bus stop advertising"
+    >
+    <img
+      src="images/moscow-residence/bus-stop (2).png"
+      alt="Moscow Residence urban advertising"
+    >
+  </div>
+
+  <div class="visual-section-heading">
+    <span>Brand System</span>
+    <h3>One identity. Many touchpoints.</h3>
+    <p>
+      The visual system was extended into branded merchandise, creating
+      consistency between consumer communications and the organisation
+      behind the brand.
+    </p>
+  </div>
+
+  <div class="gallery-two">
+    <img
+      src="images/moscow-residence/merchandise (1).png"
+      alt="Moscow Residence branded merchandise"
+    >
+    <img
+      src="images/moscow-residence/merchandise (2).png"
+      alt="Moscow Residence merchandise system"
+    >
+  </div>
+
+</section>
         <!-- RESULTS -->
 
         <div class="results">
