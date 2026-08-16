@@ -11,7 +11,7 @@
     content="Portfolio of Ivan Popov — marketing and communications leader working across brand strategy, digital growth, content and AI-driven marketing."
   >
 
-  <style>
+  <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=kwDZl9E3vlt1ybiZ7X5NnTs6qhYjnhgqShOVQjttJb5KY3jpgx9kVFJ3g37GRJa0WFjO8stA8u1pX7HpHQSMEgJ8U2LUAKDIZ5T76u9ZOu451D9Vvt-C_CaXfpcTti93Y3Hg9olKxDCwJFF9TFDgkwX2ulopcw9Biev2ZJ8JRsqkd_hM6UV1q-Ms0pU3zTuV_X5JrOIM0M1zBhf6GG4WEeLmqwDT3-z0JXm0kMh7cNuauaS9Zk_Tp2hZhd1ZivthmSSGjq8flZziq3ZAjAr6BcHOShh6rWGsbY7xByXN2ksSXY-8ZTNnRwRCBUaPksyqdeMZ8jcCmhNTx9c5Se02hg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jaGF0Z3B0LmNvbS9iYWNrZW5kLWFwaS9lc3R1YXJ5L2NvbnRlbnQ_aWQ9ZmlsZV8wMDAwMDAwMDljZmM4MWY0YjUxYzQyNmM5ZDg0ZTZkYSZmbj1pbmRleC13aXRoLXNldmVyaW4tdjMuaHRtbCZjZD1hdHRhY2htZW50JnRzPTQ5NjM1OCZwPWZzJmNpZD0xJnNpZz00Mjc3MWFkZDA4ZmFhMzE1NDQyM2M1NGMxMjNlNjc0MWI0MTMxMDdiZjAxZmRjZTUyMjg4NDk1NWY5MTgzM2RhJnY9MA"/><style>
     * {
       box-sizing: border-box;
       margin: 0;
@@ -570,21 +570,16 @@
       grid-template-columns: repeat(4, 1fr);
     }
 
-    .portfolio-pair {
-      grid-template-columns: 0.82fr 1.18fr;
-      align-items: start;
+    .portfolio-standalone {
+      margin-bottom: 70px;
     }
 
-    .portfolio-pair .severin-image {
-      height: auto;
-      background: #ffffff;
-    }
-
-    .portfolio-pair img {
+    .portfolio-standalone img {
+      display: block;
       width: 100%;
       height: auto;
       object-fit: contain;
-      display: block;
+      background: #ffffff;
     }
 
     .client-logo-grid {
@@ -1450,46 +1445,52 @@
           </p>
         </div>
 
-        <div class="severin-gallery-two portfolio-pair">
-          <div class="severin-image">
-            <img
-              src="images/severin-development/severin-portfolio-industries.png"
-              alt="Severin Development industry expertise portfolio"
-            >
-          </div>
+        <div class="portfolio-standalone">
+          <img
+            src="images/severin-development/severin-portfolio-industries.png"
+            alt="Severin Development industry expertise portfolio"
+          >
+        </div>
 
-          <div class="severin-image">
-            <img
-              src="images/severin-development/severin-portfolio-danone.png"
-              alt="Severin Development Danone project portfolio spread"
-            >
-          </div>
+        <div class="severin-caption">
+          <span>Industry Expertise</span>
+          <strong>Showing breadth across complex industrial sectors.</strong>
+          <p>
+            The portfolio translated sector experience into a clear visual system,
+            demonstrating relevance across mining, oil and gas, chemicals, wood
+            processing, pulp and paper, machinery and related industries.
+          </p>
+        </div>
+
+        <div class="portfolio-standalone">
+          <img
+            src="images/severin-development/severin-portfolio-danone.png"
+            alt="Severin Development Danone project portfolio spread"
+          >
+        </div>
+
+        <div class="severin-caption">
+          <span>Project Proof</span>
+          <strong>Danone: turning delivery experience into commercial evidence.</strong>
+          <p>
+            A project spread combined scope, timeline, investment, construction metrics
+            and Severin Development’s EPC role to make technical delivery easy to assess
+            in a sales context.
+          </p>
         </div>
 
         <div class="global-clients">
           <small>Global Project Experience</small>
-          Selected international clients and project partners
+          <strong>Selected international clients and project partners</strong>
         </div>
 
         <div class="client-logo-grid" aria-label="Selected international clients">
-          <div class="client-logo">
-            <img src="images/severin-development/logo-danone.png" alt="Danone">
-          </div>
-          <div class="client-logo">
-            <img src="images/severin-development/logo-mercedes-benz.png" alt="Mercedes-Benz">
-          </div>
-          <div class="client-logo">
-            <img src="images/severin-development/logo-lafargeholcim.png" alt="LafargeHolcim">
-          </div>
-          <div class="client-logo">
-            <img src="images/severin-development/logo-fesco.png" alt="FESCO">
-          </div>
-          <div class="client-logo">
-            <img src="images/severin-development/logo-auchan.png" alt="Auchan">
-          </div>
-          <div class="client-logo">
-            <img src="images/severin-development/logo-decathlon.png" alt="Decathlon">
-          </div>
+          <div class="client-logo">Danone</div>
+          <div class="client-logo">Mercedes-Benz</div>
+          <div class="client-logo">LafargeHolcim</div>
+          <div class="client-logo">FESCO</div>
+          <div class="client-logo">Auchan</div>
+          <div class="client-logo">Decathlon</div>
         </div>
 
         <!-- BUSINESS IMPACT -->
