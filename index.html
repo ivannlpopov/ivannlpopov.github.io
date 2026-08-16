@@ -430,6 +430,195 @@
       max-width: 700px;
     }
 
+
+    /* SEVERIN DEVELOPMENT */
+
+    .severin-case {
+      background: #f5f5f3;
+      color: #111111;
+      border-top: 1px solid #d8d8d3;
+    }
+
+    .severin-case .case-number,
+    .severin-case .section-label,
+    .severin-case .meta-label,
+    .severin-case .results-heading,
+    .severin-case .visual-caption span,
+    .severin-case .visual-section-heading span {
+      color: #777;
+    }
+
+    .severin-case .case-summary,
+    .severin-case .story-content p,
+    .severin-case .visual-caption p,
+    .severin-case .visual-section-heading p,
+    .severin-case .result-label,
+    .severin-case .results-note {
+      color: #5f5f5f;
+    }
+
+    .severin-case .case-meta,
+    .severin-case .role-list,
+    .severin-case .visual-caption,
+    .severin-case .visual-section-heading,
+    .severin-case .results-grid {
+      border-color: #ccccca;
+    }
+
+    .severin-case .role-item,
+    .severin-case .result {
+      border-color: #ccccca;
+    }
+
+    .severin-hero-image {
+      margin: 10px 0 100px;
+    }
+
+    .severin-hero-image img,
+    .severin-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .severin-image {
+      margin-bottom: 24px;
+    }
+
+    .severin-gallery-two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 80px;
+      align-items: stretch;
+    }
+
+    .severin-gallery-two .severin-image {
+      margin-bottom: 0;
+      height: 100%;
+    }
+
+    .severin-gallery-two img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .severin-gallery-two.equal-short img {
+      aspect-ratio: 16 / 10;
+    }
+
+    .severin-gallery-two.equal-tall img {
+      aspect-ratio: 4 / 3;
+    }
+
+    .severin-caption {
+      display: grid;
+      grid-template-columns: 0.55fr 1fr 1fr;
+      gap: 50px;
+      padding: 24px 0 80px;
+      border-top: 1px solid #ccccca;
+    }
+
+    .severin-caption span {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #777;
+    }
+
+    .severin-caption strong {
+      font-size: 28px;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+    }
+
+    .severin-caption p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #5f5f5f;
+      max-width: 440px;
+    }
+
+    .system-map {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid #ccccca;
+      margin: 10px 0 110px;
+    }
+
+    .system-map div {
+      padding: 24px 18px 24px 0;
+      border-bottom: 1px solid #ccccca;
+      font-size: 17px;
+    }
+
+    .severin-impact {
+      background: #111111;
+      color: #ffffff;
+      margin-top: 110px;
+      padding: 85px 70px;
+    }
+
+    .severin-impact .results-heading {
+      color: #8f8f8f;
+    }
+
+    .severin-impact .results-grid {
+      border-color: #444;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .severin-impact .result {
+      border-color: #444;
+    }
+
+    .severin-impact .result-label {
+      color: #b5b5b5;
+    }
+
+    .severin-impact .results-note {
+      color: #858585;
+    }
+
+    .global-clients {
+      font-size: clamp(28px, 4vw, 52px);
+      line-height: 1.15;
+      letter-spacing: -0.035em;
+      padding: 40px 0 110px;
+      border-top: 1px solid #ccccca;
+    }
+
+    .global-clients small {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #777;
+      margin-bottom: 26px;
+    }
+
+    @media (max-width: 800px) {
+      .severin-gallery-two,
+      .severin-caption,
+      .system-map {
+        grid-template-columns: 1fr;
+      }
+
+      .severin-caption {
+        gap: 24px;
+      }
+
+      .severin-impact {
+        padding: 60px 24px;
+      }
+
+      .severin-impact .results-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     /* NEXT PROJECTS */
 
     .next {
@@ -910,6 +1099,373 @@
       </div>
     </section>
 
+
+    <!-- SEVERIN DEVELOPMENT -->
+
+    <section class="case severin-case" id="severin-development">
+      <div class="container">
+
+        <div class="case-number">
+          02 / Case Study
+        </div>
+
+        <div class="case-header">
+          <h2>Severin Development</h2>
+
+          <p class="case-summary">
+            Building marketing as a business function for a complex B2B engineering
+            and construction company — from positioning and digital presence to
+            product marketing, brand identity and sales enablement.
+          </p>
+        </div>
+
+        <div class="case-meta">
+          <div>
+            <span class="meta-label">Project</span>
+            <span class="meta-value">Marketing function development</span>
+          </div>
+
+          <div>
+            <span class="meta-label">Role</span>
+            <span class="meta-value">Marketing Lead</span>
+          </div>
+
+          <div>
+            <span class="meta-label">Market</span>
+            <span class="meta-value">Engineering & Construction</span>
+          </div>
+
+          <div>
+            <span class="meta-label">Focus</span>
+            <span class="meta-value">B2B / EPC / Industrial</span>
+          </div>
+        </div>
+
+        <div class="severin-hero-image">
+          <img
+            src="images/severin-development/severin-hero.png"
+            alt="Severin Development corporate website"
+          >
+        </div>
+
+        <!-- CHALLENGE -->
+
+        <div class="story-grid">
+          <div class="section-label">Challenge</div>
+
+          <div class="story-content">
+            <h3>Turn engineering capability into a clear commercial proposition.</h3>
+
+            <p>
+              Severin Development had deep engineering and construction expertise,
+              but the market proposition did not fully communicate the breadth of
+              the company’s capabilities or its ability to take responsibility for
+              technically complex projects.
+            </p>
+
+            <p>
+              The task was broader than communications: structure the offer,
+              strengthen market positioning, create a coherent B2B marketing system
+              and make the company easier for clients to understand, trust and buy from.
+            </p>
+          </div>
+        </div>
+
+        <!-- STRATEGY -->
+
+        <div class="story-grid">
+          <div class="section-label">Strategy</div>
+
+          <div class="story-content">
+            <h3>Position the company around the projects others struggle to deliver.</h3>
+
+            <p>
+              I developed the marketing approach around full-cycle responsibility,
+              technical complexity, engineering credibility and demonstrable project
+              experience — with EPC/EPCM becoming one of the central commercial propositions.
+            </p>
+
+            <p>
+              The system connected awareness, trust and action through a mix of digital,
+              expert content, PR, sales materials, product communication and brand development.
+            </p>
+          </div>
+        </div>
+
+        <!-- ROLE -->
+
+        <div class="role">
+          <h3>What I built</h3>
+
+          <div class="role-list">
+            <div class="role-item">Marketing strategy</div>
+            <div class="role-item">Market positioning</div>
+            <div class="role-item">Corporate website</div>
+            <div class="role-item">SEO & digital presence</div>
+            <div class="role-item">Content strategy</div>
+            <div class="role-item">PR & expert communications</div>
+            <div class="role-item">Product marketing</div>
+            <div class="role-item">Brand development</div>
+            <div class="role-item">Corporate identity</div>
+            <div class="role-item">Sales materials</div>
+            <div class="role-item">Merchandise & applications</div>
+            <div class="role-item">Marketing budget</div>
+          </div>
+        </div>
+
+        <div class="system-map">
+          <div>Positioning</div>
+          <div>Digital Platform</div>
+          <div>Expert Content</div>
+          <div>PR</div>
+          <div>Product Marketing</div>
+          <div>Sales Materials</div>
+          <div>Brand Identity</div>
+          <div>Corporate Applications</div>
+        </div>
+
+        <!-- DIGITAL PLATFORM -->
+
+        <div class="visual-section-heading">
+          <span>Digital Platform</span>
+          <h3>Turning complex expertise into a navigable business offer.</h3>
+          <p>
+            The website became the central digital expression of the marketing system,
+            organizing services, industries and project expertise around the way
+            potential clients evaluate a complex engineering partner.
+          </p>
+        </div>
+
+        <div class="severin-gallery-two equal-short">
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-services.png"
+              alt="Severin Development services website section"
+            >
+          </div>
+
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-projects.png"
+              alt="Severin Development project portfolio website section"
+            >
+          </div>
+        </div>
+
+        <div class="severin-caption">
+          <span>Website Architecture</span>
+          <strong>Services, industries and proof in one system.</strong>
+          <p>
+            The digital platform structures EPC/EPCM, contracting, design, technical
+            customer, construction control, audit and digital measurement services
+            alongside sector expertise and project evidence.
+          </p>
+        </div>
+
+        <!-- PRODUCT MARKETING -->
+
+        <div class="visual-section-heading">
+          <span>Product Marketing</span>
+          <h3>Making engineering expertise marketable.</h3>
+          <p>
+            Complex project experience was translated into focused product communication
+            that explained not only what Severin built, but the engineering and technology
+            behind the work.
+          </p>
+        </div>
+
+        <div class="severin-image">
+          <img
+            src="images/severin-development/severin-winery.png"
+            alt="Severin Development winery project presentation"
+          >
+        </div>
+
+        <div class="severin-caption">
+          <span>Côte Rocheuse Winery</span>
+          <strong>Engineering a complex winery project.</strong>
+          <p>
+            A dedicated project narrative turned architecture, construction,
+            seismic requirements and production technology into a clear piece of
+            B2B product communication.
+          </p>
+        </div>
+
+        <div class="severin-gallery-two equal-short">
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-winery-architecture.png"
+              alt="Severin winery architecture presentation"
+            >
+          </div>
+
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-winery-technology.png"
+              alt="Severin winery technology presentation"
+            >
+          </div>
+        </div>
+
+        <!-- BRAND DEVELOPMENT -->
+
+        <div class="visual-section-heading">
+          <span>Brand Development</span>
+          <h3>A visual system built to work across every touchpoint.</h3>
+          <p>
+            The identity was developed into a consistent corporate system spanning
+            digital communication, presentations, print, branded applications and
+            everyday company materials.
+          </p>
+        </div>
+
+        <div class="severin-gallery-two equal-short">
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-brand-identity.png"
+              alt="Severin Development brand identity"
+            >
+          </div>
+
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-brand-system.png"
+              alt="Severin Development brand system"
+            >
+          </div>
+        </div>
+
+        <div class="severin-gallery-two equal-short">
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-merchandise-01.png"
+              alt="Severin Development digital business card"
+            >
+          </div>
+
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-merchandise-02.png"
+              alt="Severin Development branded merchandise"
+            >
+          </div>
+        </div>
+
+        <!-- ANNIVERSARY -->
+
+        <div class="visual-section-heading">
+          <span>20 Years</span>
+          <h3>Extending the identity for a corporate milestone.</h3>
+          <p>
+            A dedicated anniversary series explored special logo lockups for the
+            company’s 20-year milestone while preserving the recognisable core identity.
+          </p>
+        </div>
+
+        <div class="severin-gallery-two equal-short">
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-anniversary-development.png"
+              alt="Severin Development anniversary logo development"
+            >
+          </div>
+
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-anniversary-final.png"
+              alt="Severin Development anniversary logo series"
+            >
+          </div>
+        </div>
+
+        <!-- SALES ENABLEMENT -->
+
+        <div class="visual-section-heading">
+          <span>Sales Enablement</span>
+          <h3>Turning company expertise into a structured B2B sales story.</h3>
+          <p>
+            Corporate and project materials were designed to communicate scale,
+            capabilities, industry experience and proof of delivery in a form that
+            could support business development conversations.
+          </p>
+        </div>
+
+        <div class="severin-image">
+          <img
+            src="images/severin-development/severin-portfolio-booklet.png"
+            alt="Severin Development corporate portfolio booklet"
+          >
+        </div>
+
+        <div class="severin-caption">
+          <span>Corporate Portfolio</span>
+          <strong>From capabilities to commercial evidence.</strong>
+          <p>
+            The portfolio combined the company proposition, key metrics, service
+            architecture and project experience into a coherent sales and communication tool.
+          </p>
+        </div>
+
+        <div class="severin-gallery-two equal-tall">
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-portfolio-industries.png"
+              alt="Severin Development industry expertise portfolio"
+            >
+          </div>
+
+          <div class="severin-image">
+            <img
+              src="images/severin-development/severin-portfolio-danone.png"
+              alt="Severin Development Danone project portfolio spread"
+            >
+          </div>
+        </div>
+
+        <div class="global-clients">
+          <small>Global Project Experience</small>
+          Danone · Mercedes-Benz · LafargeHolcim
+        </div>
+
+        <!-- BUSINESS IMPACT -->
+
+        <div class="severin-impact">
+          <div class="results-heading">Business impact</div>
+
+          <div class="results-grid">
+            <div class="result">
+              <span class="result-number">≈5×</span>
+              <span class="result-label">
+                Contract portfolio growth during the first year
+              </span>
+            </div>
+
+            <div class="result">
+              <span class="result-number">₽1bn→₽5bn</span>
+              <span class="result-label">
+                Contract portfolio during the period
+              </span>
+            </div>
+
+            <div class="result">
+              <span class="result-number">500+</span>
+              <span class="result-label">
+                Projects represented across the company portfolio
+              </span>
+            </div>
+          </div>
+
+          <p class="results-note">
+            Contract portfolio growth reflects the wider commercial development of
+            the business during the period in which the new marketing function,
+            positioning and communications infrastructure were implemented. It is
+            presented as business context rather than as single-channel attribution.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
     <!-- UPCOMING WORK -->
 
     <section class="next">
@@ -920,12 +1476,6 @@
         </div>
 
         <h2>More cases coming next.</h2>
-
-        <div class="project-row">
-          <div class="project-number">02</div>
-          <div class="project-name">Severin Development</div>
-          <div class="project-type">Digital Strategy / Sales Platform</div>
-        </div>
 
         <div class="project-row">
           <div class="project-number">03</div>
