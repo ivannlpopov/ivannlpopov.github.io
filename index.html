@@ -567,7 +567,50 @@
 
     .severin-impact .results-grid {
       border-color: #444;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .portfolio-pair {
+      grid-template-columns: 0.82fr 1.18fr;
+      align-items: start;
+    }
+
+    .portfolio-pair .severin-image {
+      height: auto;
+      background: #ffffff;
+    }
+
+    .portfolio-pair img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .client-logo-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 18px;
+      padding: 34px 0 110px;
+      border-top: 1px solid #ccccca;
+    }
+
+    .client-logo {
+      min-height: 118px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      background: #ffffff;
+      border: 1px solid #dededb;
+    }
+
+    .client-logo img {
+      width: 100%;
+      max-width: 150px;
+      max-height: 64px;
+      object-fit: contain;
+      display: block;
     }
 
     .severin-impact .result {
@@ -602,7 +645,8 @@
     @media (max-width: 800px) {
       .severin-gallery-two,
       .severin-caption,
-      .system-map {
+      .system-map,
+      .client-logo-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1406,7 +1450,7 @@
           </p>
         </div>
 
-        <div class="severin-gallery-two equal-tall">
+        <div class="severin-gallery-two portfolio-pair">
           <div class="severin-image">
             <img
               src="images/severin-development/severin-portfolio-industries.png"
@@ -1424,7 +1468,28 @@
 
         <div class="global-clients">
           <small>Global Project Experience</small>
-          Danone · Mercedes-Benz · LafargeHolcim
+          Selected international clients and project partners
+        </div>
+
+        <div class="client-logo-grid" aria-label="Selected international clients">
+          <div class="client-logo">
+            <img src="images/severin-development/logo-danone.png" alt="Danone">
+          </div>
+          <div class="client-logo">
+            <img src="images/severin-development/logo-mercedes-benz.png" alt="Mercedes-Benz">
+          </div>
+          <div class="client-logo">
+            <img src="images/severin-development/logo-lafargeholcim.png" alt="LafargeHolcim">
+          </div>
+          <div class="client-logo">
+            <img src="images/severin-development/logo-fesco.png" alt="FESCO">
+          </div>
+          <div class="client-logo">
+            <img src="images/severin-development/logo-auchan.png" alt="Auchan">
+          </div>
+          <div class="client-logo">
+            <img src="images/severin-development/logo-decathlon.png" alt="Decathlon">
+          </div>
         </div>
 
         <!-- BUSINESS IMPACT -->
@@ -1441,9 +1506,16 @@
             </div>
 
             <div class="result">
-              <span class="result-number">₽1bn→₽5bn</span>
+              <span class="result-number">≈€10m→€50m</span>
               <span class="result-label">
-                Contract portfolio during the period
+                Approximate contract portfolio value
+              </span>
+            </div>
+
+            <div class="result">
+              <span class="result-number">50k</span>
+              <span class="result-label">
+                Unique website users per month
               </span>
             </div>
 
@@ -1456,10 +1528,12 @@
           </div>
 
           <p class="results-note">
-            Contract portfolio growth reflects the wider commercial development of
-            the business during the period in which the new marketing function,
-            positioning and communications infrastructure were implemented. It is
-            presented as business context rather than as single-channel attribution.
+            Original contract portfolio figures were reported in RUB (RUB 1bn → RUB 5bn).
+            EUR values are approximate conversions for international readability.
+            Portfolio growth reflects the wider commercial development of the business
+            during the period in which the new marketing function, positioning and
+            communications infrastructure were implemented; it is shown as business
+            context rather than single-channel attribution.
           </p>
         </div>
 
