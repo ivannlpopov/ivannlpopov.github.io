@@ -11,7 +11,7 @@
     content="Portfolio of Ivan Popov — marketing and communications leader working across brand strategy, digital growth, content and AI-driven marketing."
   >
 
-  <style>
+  <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=6upoWhqtZ5jMgMGjyRLbOkbVt8cyl0RfZqwulCN8yTZgJaaOwhBV2LBCzAtvnitDVje3ekUvnjT6bsy_8_FQm98T7eE-gOiDGKXuU7KeYEMEz7IkTlk94bAgzupn63l00IekIA6muFdjfxqJQwIsOcBC93orU4YBdduJiU-9-2HChVl_o3-XoLzawte8y9zxmWPxiB3g-NfMCQqkDaUMX8WjTwgEoVSQkL4k3py2eNVJVQ_hU64-mncb2iRmWWx79hmQ3TNLTduK_F3IgcfDaknNW5NuyThGQrsW5OClP5qB9813css39E5JnseRtYIF" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jaGF0Z3B0LmNvbS9iYWNrZW5kLWFwaS9lc3R1YXJ5L2NvbnRlbnQ_aWQ9ZmlsZV8wMDAwMDAwMGZlYjg4MWY0ODNlMmNkM2E0YjY0MzVhYyZmbj1pbmRleCUyODElMjkuaHRtbCZjZD1hdHRhY2htZW50JnRzPTQ5NjM4NyZwPWZzJmNpZD0xJnNpZz0zYjM2MmJkNDQ0MTg4OTNkNjQyMTdmMDU2NWJjMjNlNWIzYzhmYTI3YTRiNjM1YjE1ZTE1ZDM4ZWY1YmI0MTZhJnY9MA"/><style>
     * {
       box-sizing: border-box;
       margin: 0;
@@ -820,6 +820,64 @@
 
     .ingrad-placeholder.feature em {
       color: #aaa;
+    }
+
+
+    .ingrad-media-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      align-items: start;
+    }
+
+    .ingrad-media-grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .ingrad-media-grid.single {
+      grid-template-columns: 1fr;
+    }
+
+    .ingrad-media {
+      margin: 0;
+      overflow: hidden;
+      background: #f5f5f2;
+      border: 1px solid #deded9;
+    }
+
+    .ingrad-media.wide {
+      grid-column: 1 / -1;
+    }
+
+    .ingrad-media img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .ingrad-media figcaption {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 13px 15px 15px;
+      font-size: 11px;
+      line-height: 1.45;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #777;
+      background: #fff;
+    }
+
+    @media (max-width: 800px) {
+      .ingrad-media-grid,
+      .ingrad-media-grid.three {
+        grid-template-columns: 1fr;
+      }
+
+      .ingrad-media.wide {
+        grid-column: auto;
+      }
     }
 
     .ingrad-impact {
@@ -1869,18 +1927,15 @@
             </p>
           </div>
 
-          <div class="ingrad-placeholder-grid">
-            <div class="ingrad-placeholder feature">
-              <small>Words &amp; Concrete</small>
-              <strong>Content transformation / before &amp; after</strong>
-              <em>Visual to be selected from source materials</em>
-            </div>
-
-            <div class="ingrad-placeholder">
-              <small>Editorial System</small>
-              <strong>One approach across multiple formats and touchpoints</strong>
-              <em>Print · web · landing pages · CRM · presentations</em>
-            </div>
+          <div class="ingrad-media-grid">
+            <figure class="ingrad-media wide">
+              <img src="ingrad-content-01.png" alt="INGRAD content transformation and logo evolution" loading="lazy" decoding="async">
+              <figcaption><span>Content transformation</span><span>Brand language evolving with the identity</span></figcaption>
+            </figure>
+            <figure class="ingrad-media wide">
+              <img src="ingrad-content-02.png" alt="INGRAD visual content and storytelling transformation" loading="lazy" decoding="async">
+              <figcaption><span>Visual storytelling</span><span>From fragmented communication to a recognisable system</span></figcaption>
+            </figure>
           </div>
         </div>
 
@@ -1900,24 +1955,19 @@
             </p>
           </div>
 
-          <div class="ingrad-placeholder-grid three">
-            <div class="ingrad-placeholder yellow">
-              <small>Campaign</small>
-              <strong>Image / product campaign</strong>
-              <em>Outdoor / print</em>
-            </div>
-
-            <div class="ingrad-placeholder">
-              <small>Radio</small>
-              <strong>Script-led advertising</strong>
-              <em>Audio / copywriting</em>
-            </div>
-
-            <div class="ingrad-placeholder">
-              <small>Promotion</small>
-              <strong>Commercial creative mechanics</strong>
-              <em>Promo / sales activation</em>
-            </div>
+          <div class="ingrad-media-grid">
+            <figure class="ingrad-media">
+              <img src="ingrad-campaign-01.png" alt="INGRAD advertising campaign" loading="lazy" decoding="async">
+              <figcaption><span>Campaign system</span><span>Outdoor / print</span></figcaption>
+            </figure>
+            <figure class="ingrad-media">
+              <img src="ingrad-campaign-02.png" alt="INGRAD employee-led campaign" loading="lazy" decoding="async">
+              <figcaption><span>People-led campaign</span><span>Employees as campaign protagonists</span></figcaption>
+            </figure>
+            <figure class="ingrad-media wide">
+              <img src="ingrad-radio-01.png" alt="INGRAD radio and copywriting campaign" loading="lazy" decoding="async">
+              <figcaption><span>Radio &amp; copywriting</span><span>Script-led advertising</span></figcaption>
+            </figure>
           </div>
         </div>
 
@@ -1936,18 +1986,15 @@
             </p>
           </div>
 
-          <div class="ingrad-placeholder-grid">
-            <div class="ingrad-placeholder feature">
-              <small>Collaboration</small>
-              <strong>Star Wars / Disney</strong>
-              <em>Hero campaign visual</em>
-            </div>
-
-            <div class="ingrad-placeholder feature">
-              <small>Collaboration</small>
-              <strong>Universal / selected special project</strong>
-              <em>Hero campaign visual</em>
-            </div>
+          <div class="ingrad-media-grid">
+            <figure class="ingrad-media">
+              <img src="ingrad-starwars-01.png" alt="INGRAD Star Wars and Disney collaboration" loading="lazy" decoding="async">
+              <figcaption><span>Disney / Star Wars</span><span>Entertainment partnership</span></figcaption>
+            </figure>
+            <figure class="ingrad-media">
+              <img src="ingrad-universal-01.png" alt="INGRAD Universal collaboration" loading="lazy" decoding="async">
+              <figcaption><span>Universal</span><span>Entertainment partnership</span></figcaption>
+            </figure>
           </div>
         </div>
 
@@ -1967,24 +2014,19 @@
             </p>
           </div>
 
-          <div class="ingrad-placeholder-grid three">
-            <div class="ingrad-placeholder">
-              <small>INJOY</small>
-              <strong>Lifestyle-driven urban storytelling</strong>
-              <em>Booklet / identity / project narrative</em>
-            </div>
-
-            <div class="ingrad-placeholder">
-              <small>FORIVER</small>
-              <strong>Premium product narrative</strong>
-              <em>Riverfront / architecture / privacy</em>
-            </div>
-
-            <div class="ingrad-placeholder">
-              <small>INHAUS</small>
-              <strong>Suburban product positioning</strong>
-              <em>Naming / brochure / lifestyle</em>
-            </div>
+          <div class="ingrad-media-grid three">
+            <figure class="ingrad-media">
+              <img src="ingrad-injoy-01.png" alt="INJOY marketing concept" loading="lazy" decoding="async">
+              <figcaption><span>INJOY</span><span>Urban lifestyle narrative</span></figcaption>
+            </figure>
+            <figure class="ingrad-media">
+              <img src="ingrad-foriver-01.png" alt="FORIVER marketing concept" loading="lazy" decoding="async">
+              <figcaption><span>FORIVER</span><span>Premium waterfront positioning</span></figcaption>
+            </figure>
+            <figure class="ingrad-media">
+              <img src="ingrad-inhaus-01.png" alt="INHAUS marketing concept" loading="lazy" decoding="async">
+              <figcaption><span>INHAUS</span><span>Suburban product storytelling</span></figcaption>
+            </figure>
           </div>
         </div>
 
@@ -2003,18 +2045,11 @@
             </p>
           </div>
 
-          <div class="ingrad-placeholder-grid">
-            <div class="ingrad-placeholder feature">
-              <small>Landing Page</small>
-              <strong>Bereg Solntsa / digital experience</strong>
-              <em>Website capture to be added</em>
-            </div>
-
-            <div class="ingrad-placeholder">
-              <small>Special Projects</small>
-              <strong>Selected digital and promotional work</strong>
-              <em>Visual selection pending</em>
-            </div>
+          <div class="ingrad-media-grid single">
+            <figure class="ingrad-media wide">
+              <img src="ingrad-bereg-01.png" alt="Solnechny Bereg landing page and digital project" loading="lazy" decoding="async">
+              <figcaption><span>Solnechny Bereg</span><span>Focused digital product experience</span></figcaption>
+            </figure>
           </div>
         </div>
 
@@ -2033,18 +2068,11 @@
             </p>
           </div>
 
-          <div class="ingrad-placeholder-grid">
-            <div class="ingrad-placeholder feature">
-              <small>White Cape</small>
-              <strong>Marketing concept for a new residential project</strong>
-              <em>Strategy / positioning / proposition</em>
-            </div>
-
-            <div class="ingrad-placeholder">
-              <small>Naming</small>
-              <strong>Building project meaning before launch</strong>
-              <em>AI-generated portfolio visual planned</em>
-            </div>
+          <div class="ingrad-media-grid single">
+            <figure class="ingrad-media wide">
+              <img src="ingrad-white-cape-01.png" alt="Bely Mys product marketing concept" loading="lazy" decoding="async">
+              <figcaption><span>Bely Mys</span><span>Product strategy / positioning / proposition</span></figcaption>
+            </figure>
           </div>
         </div>
 
@@ -2063,18 +2091,15 @@
             </p>
           </div>
 
-          <div class="ingrad-placeholder-grid">
-            <div class="ingrad-placeholder feature yellow">
-              <small>INGRAD Book</small>
-              <strong>A guide to a happy life in a new home.</strong>
-              <em>Company book / customer experience</em>
-            </div>
-
-            <div class="ingrad-placeholder">
-              <small>Customer Guides</small>
-              <strong>Making complex decisions easier to navigate.</strong>
-              <em>Transaction guide / product booklets / useful content</em>
-            </div>
+          <div class="ingrad-media-grid">
+            <figure class="ingrad-media">
+              <img src="ingrad-book-01.png" alt="INGRAD Book customer publication" loading="lazy" decoding="async">
+              <figcaption><span>INGRAD Book</span><span>Customer editorial experience</span></figcaption>
+            </figure>
+            <figure class="ingrad-media">
+              <img src="ingrad-guide-01.png" alt="INGRAD transaction guide" loading="lazy" decoding="async">
+              <figcaption><span>Transaction Guide</span><span>Useful content across the buying journey</span></figcaption>
+            </figure>
           </div>
         </div>
 
@@ -2094,10 +2119,11 @@
             </p>
           </div>
 
-          <div class="ingrad-placeholder yellow">
-            <small>Big Idea</small>
-            <strong>The centre is where I am.</strong>
-            <em>Strategic platform / campaign system</em>
+          <div class="ingrad-media-grid single">
+            <figure class="ingrad-media wide">
+              <img src="ingrad-big-idea-01.png" alt="INGRAD The Center Is Where I Am campaign platform" loading="lazy" decoding="async">
+              <figcaption><span>Key campaign</span><span>The Center Is Where I Am</span></figcaption>
+            </figure>
           </div>
         </div>
 
@@ -2116,18 +2142,11 @@
             </p>
           </div>
 
-          <div class="ingrad-placeholder-grid">
-            <div class="ingrad-placeholder feature">
-              <small>Internal Newsletter</small>
-              <strong>Business communications for employees</strong>
-              <em>Author / editor</em>
-            </div>
-
-            <div class="ingrad-placeholder">
-              <small>Internal Content</small>
-              <strong>Sharing communication standards inside the company</strong>
-              <em>Editorial / education / culture</em>
-            </div>
+          <div class="ingrad-media-grid single">
+            <figure class="ingrad-media wide">
+              <img src="ingrad-newsletter-01.png" alt="INGRAD internal business communications newsletter" loading="lazy" decoding="async">
+              <figcaption><span>Internal Newsletter</span><span>Author / editor / communication culture</span></figcaption>
+            </figure>
           </div>
         </div>
 
