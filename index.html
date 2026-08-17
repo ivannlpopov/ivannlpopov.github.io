@@ -666,6 +666,223 @@
       }
     }
 
+
+    /* INGRAD */
+
+    .ingrad-case {
+      background: #ffffff;
+      color: #111111;
+      border-top: 1px solid #d8d8d3;
+    }
+
+    .ingrad-case .case-number,
+    .ingrad-case .section-label,
+    .ingrad-case .meta-label,
+    .ingrad-case .results-heading {
+      color: #777;
+    }
+
+    .ingrad-case .case-summary,
+    .ingrad-case .story-content p,
+    .ingrad-case .ingrad-section-copy,
+    .ingrad-case .result-label,
+    .ingrad-case .results-note {
+      color: #5f5f5f;
+    }
+
+    .ingrad-case .case-meta,
+    .ingrad-case .role-list,
+    .ingrad-case .results-grid {
+      border-color: #d3d3d0;
+    }
+
+    .ingrad-case .role-item,
+    .ingrad-case .result {
+      border-color: #d3d3d0;
+    }
+
+    .ingrad-accent {
+      color: #f4bf18;
+    }
+
+    .ingrad-manifesto {
+      margin: 20px 0 110px;
+      padding: 78px 72px;
+      background: #f4bf18;
+      color: #111;
+    }
+
+    .ingrad-manifesto small {
+      display: block;
+      margin-bottom: 42px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .ingrad-manifesto strong {
+      display: block;
+      max-width: 1040px;
+      font-size: clamp(44px, 6vw, 84px);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+      font-weight: 600;
+    }
+
+    .ingrad-section {
+      padding: 24px 0 105px;
+      border-top: 1px solid #d3d3d0;
+    }
+
+    .ingrad-section-head {
+      display: grid;
+      grid-template-columns: 0.55fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 54px;
+    }
+
+    .ingrad-section-label {
+      font-size: 12px;
+      line-height: 1.4;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+      color: #777;
+    }
+
+    .ingrad-section h3 {
+      margin: 0;
+      font-size: clamp(30px, 3.2vw, 46px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      font-weight: 600;
+    }
+
+    .ingrad-section-copy {
+      margin: 0;
+      max-width: 500px;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .ingrad-placeholder-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .ingrad-placeholder-grid.three {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ingrad-placeholder {
+      min-height: 360px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #f4f4f1;
+      border: 1px solid #deded9;
+    }
+
+    .ingrad-placeholder.feature {
+      min-height: 570px;
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+
+    .ingrad-placeholder.yellow {
+      background: #f4bf18;
+      border-color: #f4bf18;
+    }
+
+    .ingrad-placeholder small {
+      font-size: 11px;
+      line-height: 1.4;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.68;
+    }
+
+    .ingrad-placeholder strong {
+      max-width: 420px;
+      font-size: 25px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      font-weight: 600;
+    }
+
+    .ingrad-placeholder em {
+      font-style: normal;
+      font-size: 13px;
+      color: #777;
+    }
+
+    .ingrad-placeholder.feature em {
+      color: #aaa;
+    }
+
+    .ingrad-impact {
+      margin-top: 10px;
+      padding: 85px 70px;
+      background: #111;
+      color: #fff;
+    }
+
+    .ingrad-impact .results-heading {
+      color: #8f8f8f;
+    }
+
+    .ingrad-impact .results-grid {
+      grid-template-columns: repeat(3, 1fr);
+      border-color: #444;
+    }
+
+    .ingrad-impact .result {
+      border-color: #444;
+    }
+
+    .ingrad-impact .result-label {
+      color: #b5b5b5;
+    }
+
+    .ingrad-impact .results-note {
+      max-width: 900px;
+      margin-top: 30px;
+      color: #aaa;
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    @media (max-width: 800px) {
+      .ingrad-manifesto {
+        padding: 55px 24px;
+      }
+
+      .ingrad-section-head,
+      .ingrad-placeholder-grid,
+      .ingrad-placeholder-grid.three {
+        grid-template-columns: 1fr;
+      }
+
+      .ingrad-section-head {
+        gap: 24px;
+      }
+
+      .ingrad-placeholder,
+      .ingrad-placeholder.feature {
+        min-height: 320px;
+      }
+
+      .ingrad-impact {
+        padding: 60px 24px;
+      }
+
+      .ingrad-impact .results-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     /* NEXT PROJECTS */
 
     .next {
@@ -1552,6 +1769,407 @@
       </div>
     </section>
 
+
+    <!-- INGRAD -->
+
+    <section class="case ingrad-case" id="ingrad">
+      <div class="container">
+
+        <div class="case-number">
+          03 / CASE STUDY
+        </div>
+
+        <div class="case-header">
+          <h2>INGRAD</h2>
+
+          <p class="case-summary">
+            Building a creative and content system for a major residential developer —
+            from product positioning and campaign ideas to editorial, digital,
+            customer communications and branded experiences.
+          </p>
+        </div>
+
+        <div class="case-meta">
+          <div>
+            <span class="meta-label">Project</span>
+            <span class="meta-value">Creative &amp; Content Transformation</span>
+          </div>
+
+          <div>
+            <span class="meta-label">Role</span>
+            <span class="meta-value">Director of Content &amp; Marketing Communications</span>
+          </div>
+
+          <div>
+            <span class="meta-label">Market</span>
+            <span class="meta-value">Residential Real Estate</span>
+          </div>
+
+          <div>
+            <span class="meta-label">Focus</span>
+            <span class="meta-value">Content / Creative / Product Marketing</span>
+          </div>
+        </div>
+
+        <!-- CHALLENGE -->
+
+        <div class="story-grid">
+          <div class="section-label">Challenge</div>
+
+          <div class="story-content">
+            <h3>Make real-estate communication worth paying attention to.</h3>
+
+            <p>
+              A large portfolio generated an equally large volume of communication:
+              project launches, advertising, websites, brochures, sales materials,
+              customer guides, scripts, newsletters and special projects.
+            </p>
+
+            <p>
+              The task was not simply to produce more content. It was to make the
+              communication clearer, more distinctive and more useful — while giving
+              very different residential products a consistent INGRAD point of view.
+            </p>
+          </div>
+        </div>
+
+        <!-- ROLE -->
+
+        <div class="role">
+          <h3>What I led</h3>
+
+          <div class="role-list">
+            <div class="role-item">Content strategy &amp; editorial system</div>
+            <div class="role-item">Campaign concepts &amp; copy direction</div>
+            <div class="role-item">Product positioning &amp; storytelling</div>
+            <div class="role-item">Print, digital &amp; customer communications</div>
+            <div class="role-item">Naming, scripts &amp; special projects</div>
+            <div class="role-item">Agency, design &amp; cross-functional collaboration</div>
+          </div>
+        </div>
+
+        <!-- CONTENT PRINCIPLE -->
+
+        <div class="ingrad-manifesto">
+          <small>Content transformation</small>
+          <strong>Less filler.<br>More customer value.</strong>
+        </div>
+
+        <div class="ingrad-section">
+          <div class="ingrad-section-head">
+            <div class="ingrad-section-label">Content System</div>
+
+            <h3>Turning content into a marketing discipline.</h3>
+
+            <p class="ingrad-section-copy">
+              We reworked how product information was structured and written across
+              print, websites, landing pages, banners, presentations, CRM communication
+              and special projects — replacing bureaucratic language and generic
+              category clichés with clearer propositions and stronger customer utility.
+            </p>
+          </div>
+
+          <div class="ingrad-placeholder-grid">
+            <div class="ingrad-placeholder feature">
+              <small>Words &amp; Concrete</small>
+              <strong>Content transformation / before &amp; after</strong>
+              <em>Visual to be selected from source materials</em>
+            </div>
+
+            <div class="ingrad-placeholder">
+              <small>Editorial System</small>
+              <strong>One approach across multiple formats and touchpoints</strong>
+              <em>Print · web · landing pages · CRM · presentations</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- CREATIVE CAMPAIGNS -->
+
+        <div class="ingrad-section">
+          <div class="ingrad-section-head">
+            <div class="ingrad-section-label">Creative Campaigns</div>
+
+            <h3>Turning propositions into ideas people could remember.</h3>
+
+            <p class="ingrad-section-copy">
+              Campaign work ranged from outdoor and radio to promotional mechanics,
+              scripts and integrated creative platforms. The objective was not
+              creativity for its own sake, but an idea strong enough to sharpen the
+              product message and travel across channels.
+            </p>
+          </div>
+
+          <div class="ingrad-placeholder-grid three">
+            <div class="ingrad-placeholder yellow">
+              <small>Campaign</small>
+              <strong>Image / product campaign</strong>
+              <em>Outdoor / print</em>
+            </div>
+
+            <div class="ingrad-placeholder">
+              <small>Radio</small>
+              <strong>Script-led advertising</strong>
+              <em>Audio / copywriting</em>
+            </div>
+
+            <div class="ingrad-placeholder">
+              <small>Promotion</small>
+              <strong>Commercial creative mechanics</strong>
+              <em>Promo / sales activation</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLLABORATIONS -->
+
+        <div class="ingrad-section">
+          <div class="ingrad-section-head">
+            <div class="ingrad-section-label">Cultural Collaborations</div>
+
+            <h3>Taking a property brand into popular culture.</h3>
+
+            <p class="ingrad-section-copy">
+              Selected collaborations expanded INGRAD communication beyond conventional
+              real-estate advertising and connected projects with globally recognised
+              entertainment and consumer brands.
+            </p>
+          </div>
+
+          <div class="ingrad-placeholder-grid">
+            <div class="ingrad-placeholder feature">
+              <small>Collaboration</small>
+              <strong>Star Wars / Disney</strong>
+              <em>Hero campaign visual</em>
+            </div>
+
+            <div class="ingrad-placeholder feature">
+              <small>Collaboration</small>
+              <strong>Universal / selected special project</strong>
+              <em>Hero campaign visual</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT STORYTELLING -->
+
+        <div class="ingrad-section">
+          <div class="ingrad-section-head">
+            <div class="ingrad-section-label">Product Storytelling</div>
+
+            <h3>Giving very different developments their own voice.</h3>
+
+            <p class="ingrad-section-copy">
+              The portfolio ranged from comfort-class housing to premium waterfront
+              residences and suburban products. Product communication translated
+              architecture, location, amenities and lifestyle into differentiated
+              narratives instead of repeating one generic corporate formula.
+            </p>
+          </div>
+
+          <div class="ingrad-placeholder-grid three">
+            <div class="ingrad-placeholder">
+              <small>INJOY</small>
+              <strong>Lifestyle-driven urban storytelling</strong>
+              <em>Booklet / identity / project narrative</em>
+            </div>
+
+            <div class="ingrad-placeholder">
+              <small>FORIVER</small>
+              <strong>Premium product narrative</strong>
+              <em>Riverfront / architecture / privacy</em>
+            </div>
+
+            <div class="ingrad-placeholder">
+              <small>INHAUS</small>
+              <strong>Suburban product positioning</strong>
+              <em>Naming / brochure / lifestyle</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIGITAL & SPECIAL PROJECTS -->
+
+        <div class="ingrad-section">
+          <div class="ingrad-section-head">
+            <div class="ingrad-section-label">Digital &amp; Special Projects</div>
+
+            <h3>Extending the story beyond standard campaign formats.</h3>
+
+            <p class="ingrad-section-copy">
+              Landing pages, special projects and digital activations created focused
+              environments for individual propositions while keeping the communication
+              recognisably part of the wider brand system.
+            </p>
+          </div>
+
+          <div class="ingrad-placeholder-grid">
+            <div class="ingrad-placeholder feature">
+              <small>Landing Page</small>
+              <strong>Bereg Solntsa / digital experience</strong>
+              <em>Website capture to be added</em>
+            </div>
+
+            <div class="ingrad-placeholder">
+              <small>Special Projects</small>
+              <strong>Selected digital and promotional work</strong>
+              <em>Visual selection pending</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT MARKETING -->
+
+        <div class="ingrad-section">
+          <div class="ingrad-section-head">
+            <div class="ingrad-section-label">Product Marketing</div>
+
+            <h3>Moving upstream from communication into proposition development.</h3>
+
+            <p class="ingrad-section-copy">
+              For new projects, the work started before advertising: location analysis,
+              competitive context, audience needs, product advantages and the strategic
+              narrative that could organise future marketing communication.
+            </p>
+          </div>
+
+          <div class="ingrad-placeholder-grid">
+            <div class="ingrad-placeholder feature">
+              <small>White Cape</small>
+              <strong>Marketing concept for a new residential project</strong>
+              <em>Strategy / positioning / proposition</em>
+            </div>
+
+            <div class="ingrad-placeholder">
+              <small>Naming</small>
+              <strong>Building project meaning before launch</strong>
+              <em>AI-generated portfolio visual planned</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- EDITORIAL BRAND EXPERIENCE -->
+
+        <div class="ingrad-section">
+          <div class="ingrad-section-head">
+            <div class="ingrad-section-label">Editorial Brand Experience</div>
+
+            <h3>Continuing the relationship after the sale.</h3>
+
+            <p class="ingrad-section-copy">
+              INGRAD Book reframed a traditional handover publication as a branded
+              homeowner experience: practical guidance, inspiration and service content
+              structured around the first year in a new home.
+            </p>
+          </div>
+
+          <div class="ingrad-placeholder-grid">
+            <div class="ingrad-placeholder feature yellow">
+              <small>INGRAD Book</small>
+              <strong>A guide to a happy life in a new home.</strong>
+              <em>Company book / customer experience</em>
+            </div>
+
+            <div class="ingrad-placeholder">
+              <small>Customer Guides</small>
+              <strong>Making complex decisions easier to navigate.</strong>
+              <em>Transaction guide / product booklets / useful content</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- BIG IDEA -->
+
+        <div class="ingrad-section">
+          <div class="ingrad-section-head">
+            <div class="ingrad-section-label">Brand Platform</div>
+
+            <h3>“The centre is where I am.”</h3>
+
+            <p class="ingrad-section-copy">
+              A unifying Big Idea created a platform for image and product communication
+              across developments. In the portfolio, this section will show the strategic
+              context and how the idea translated into communication rather than claim
+              sole authorship of the agency-developed concept.
+            </p>
+          </div>
+
+          <div class="ingrad-placeholder yellow">
+            <small>Big Idea</small>
+            <strong>The centre is where I am.</strong>
+            <em>Strategic platform / campaign system</em>
+          </div>
+        </div>
+
+        <!-- INTERNAL COMMUNICATIONS -->
+
+        <div class="ingrad-section">
+          <div class="ingrad-section-head">
+            <div class="ingrad-section-label">Inside the Organisation</div>
+
+            <h3>Building a culture around better communication.</h3>
+
+            <p class="ingrad-section-copy">
+              I also created an internal newsletter about business communications,
+              turning practical observations, examples and communication principles
+              into an editorial product for employees.
+            </p>
+          </div>
+
+          <div class="ingrad-placeholder-grid">
+            <div class="ingrad-placeholder feature">
+              <small>Internal Newsletter</small>
+              <strong>Business communications for employees</strong>
+              <em>Author / editor</em>
+            </div>
+
+            <div class="ingrad-placeholder">
+              <small>Internal Content</small>
+              <strong>Sharing communication standards inside the company</strong>
+              <em>Editorial / education / culture</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMPACT -->
+
+        <div class="ingrad-impact">
+          <div class="results-heading">Business impact</div>
+
+          <div class="results-grid">
+            <div class="result">
+              <span class="result-number">20+</span>
+              <span class="result-label">
+                Residential developments across multiple segments
+              </span>
+            </div>
+
+            <div class="result">
+              <span class="result-number">+375%</span>
+              <span class="result-label">
+                Inbound lead generation
+              </span>
+            </div>
+
+            <div class="result">
+              <span class="result-number">360°</span>
+              <span class="result-label">
+                Content across digital, advertising, print, CRM and customer touchpoints
+              </span>
+            </div>
+          </div>
+
+          <p class="results-note">
+            The +375% figure reflects inbound lead-generation growth associated with the
+            wider content, SEO, digital optimisation and customer-journey programme
+            during the INGRAD period. Final attribution wording and any additional
+            metrics will be validated before publication.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
     <!-- UPCOMING WORK -->
 
     <section class="next">
@@ -1561,14 +2179,7 @@
           Selected Work
         </div>
 
-        <h2>More cases coming next.</h2>
-
-        <div class="project-row">
-          <div class="project-number">03</div>
-          <div class="project-name">INGRAD</div>
-          <div class="project-type">Corporate & Content Communications</div>
-        </div>
-
+        <h2>Selected work continues.</h2>
         <div class="project-row">
           <div class="project-number">04</div>
           <div class="project-name">AI & Marketing Innovation</div>
