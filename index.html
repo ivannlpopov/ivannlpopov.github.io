@@ -1171,7 +1171,48 @@
     @media(max-width:900px){.autods-hero,.autods-principle{grid-template-columns:1fr}.autods-storyboard{grid-template-columns:1fr 1fr}.autods-grid2,.ab-grid{grid-template-columns:1fr}.social-cards{grid-template-columns:1fr 1fr}.tiktok-board{grid-template-columns:1fr 1fr}.autods-built-grid{grid-template-columns:1fr 1fr 1fr}.autods-built-item{border-bottom:1px solid #314066}.autods-frame{min-height:220px}}
     @media(max-width:560px){.autods-storyboard,.social-cards,.tiktok-board,.autods-built-grid{grid-template-columns:1fr}.autods-hero,.autods-bigidea,.autods-built{padding:28px}.autods-built-item{border-right:0}}
 
-  </style>
+  
+/* AutoDS TikTok final CTA — definitive layout fix */
+.autods-tiktok {
+  grid-template-columns: repeat(5, minmax(0, 1fr)) minmax(210px, 1.22fr) !important;
+}
+.autods-tiktok-final {
+  min-width: 210px !important;
+}
+.autods-tiktok-final .autods-pill {
+  width: max-content !important;
+  min-width: max-content !important;
+  max-width: none !important;
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  padding: 13px 16px !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+}
+
+
+/* AutoDS CTA hard fix */
+.autods-cta-nowrap{
+  display:inline-block !important;
+  white-space:nowrap !important;
+  word-break:normal !important;
+  overflow-wrap:normal !important;
+}
+.autods-tiktok-final .autods-pill{
+  display:inline-flex !important;
+  width:auto !important;
+  min-width:0 !important;
+  max-width:none !important;
+  white-space:nowrap !important;
+  flex-wrap:nowrap !important;
+  padding:12px 11px !important;
+  font-size:13px !important;
+  line-height:1 !important;
+}
+
+</style>
 </head>
 
 <body>
@@ -2574,7 +2615,7 @@
             <div class="tt-card"><div class="step">3</div><b>Take your first orders.</b><small>Sell.</small></div>
             <div class="tt-card"><div class="step">4</div><b>Find what competitors don't have.</b><small>Differentiate.</small></div>
             <div class="tt-card"><div class="step">5</div><b>Earn your first million.</b><small>Aspire.</small></div>
-            <div class="tt-card"><b>Five steps are easiest with AutoDS.</b><span>Try the trial for $1</span></div>
+            <div class="tt-card"><b>Five steps are easiest with AutoDS.</b><span><span class="autods-cta-nowrap">Try the trial for&nbsp;$1</span></span></div>
           </div>
         </div>
 
