@@ -1114,6 +1114,26 @@
     .ai-links a { color:#fff; border:1px solid #444650; padding:13px 18px; text-decoration:none; font-size:13px; text-transform:uppercase; letter-spacing:.07em; }
     @media(max-width:800px){.ai-hero{padding:38px 24px}.ai-flow,.ai-metrics{grid-template-columns:1fr 1fr}.ai-flow div,.ai-metric{border-bottom:1px solid #34353b}.ai-section-head{grid-template-columns:1fr;gap:20px}.ai-split,.ai-actions{grid-template-columns:1fr}}
 
+
+    /* AUDITAI DATA VISUALS */
+    .ai-matrix{margin-top:50px;border:1px solid #34353b;overflow-x:auto}
+    .ai-matrix-grid{min-width:760px;display:grid;grid-template-columns:1.35fr repeat(4,1fr)}
+    .ai-matrix-grid>div{padding:18px 20px;border-right:1px solid #34353b;border-bottom:1px solid #34353b}
+    .ai-matrix-grid>div:nth-child(5n){border-right:0}
+    .ai-matrix-grid .head{color:#8f9198;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+    .ai-matrix-grid .market{color:#d9dae0}
+    .ai-matrix-grid .rank{font-size:25px;font-weight:600}
+    .ai-attribution{margin-top:45px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:28px;padding:56px;border:1px solid #34353b;background:#111216}
+    .ai-entity{padding:32px;border:1px solid #3a3b42}
+    .ai-entity small{display:block;color:#8f9198;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px}
+    .ai-entity strong{font-size:clamp(30px,4vw,54px);letter-spacing:-.04em}
+    .ai-arrow{font-size:42px;color:#8e91ff}
+    .ai-bars{margin-top:45px;border:1px solid #34353b;padding:34px}
+    .ai-bar-row{display:grid;grid-template-columns:180px 1fr 70px;gap:20px;align-items:center;margin:18px 0}
+    .ai-bar-track{height:10px;background:#24252b}.ai-bar-fill{height:100%;background:#8e91ff}
+    .ai-bar-row b{font-size:13px;font-weight:500}.ai-bar-row span{color:#aeb0b7;text-align:right}
+    @media(max-width:800px){.ai-attribution{grid-template-columns:1fr;padding:28px}.ai-arrow{transform:rotate(90deg);text-align:center}.ai-bar-row{grid-template-columns:110px 1fr 50px}}
+
   </style>
 </head>
 
@@ -2295,6 +2315,16 @@
         <div class="ai-section">
           <div class="ai-section-head"><div class="section-label">02 / Research</div><div><h3>Testing what the market can actually recover.</h3><p>The Syensqo study applies the methodology to a global advanced-materials company, comparing intended positioning with organic search evidence, AI reconstruction and simulated B2B buyer decisions.</p></div></div>
           <div class="ai-metrics"><div class="ai-metric"><strong>20</strong><span>Search queries</span></div><div class="ai-metric"><strong>3</strong><span>Search engines</span></div><div class="ai-metric"><strong>4</strong><span>AI platforms</span></div><div class="ai-metric"><strong>5</strong><span>Buyer scenarios</span></div></div>
+
+          <div class="ai-bars" aria-label="Observed organic search visibility in tested query sets">
+            <div class="ai-kicker">OBSERVED SEARCH FOOTPRINT / TEST SAMPLE</div>
+            <div class="ai-bar-row"><b>Specialty polymers</b><div class="ai-bar-track"><div class="ai-bar-fill" style="width:100%"></div></div><span>6 hits</span></div>
+            <div class="ai-bar-row"><b>Aerospace</b><div class="ai-bar-track"><div class="ai-bar-fill" style="width:33.3%"></div></div><span>2 hits</span></div>
+            <div class="ai-bar-row"><b>Semiconductors</b><div class="ai-bar-track"><div class="ai-bar-fill" style="width:0%"></div></div><span>0 hits</span></div>
+            <div class="ai-bar-row"><b>Batteries</b><div class="ai-bar-track"><div class="ai-bar-fill" style="width:33.3%"></div></div><span>2 hits</span></div>
+            <div class="ai-bar-row"><b>Healthcare</b><div class="ai-bar-track"><div class="ai-bar-fill" style="width:0%"></div></div><span>0 hits</span></div>
+          </div>
+
         </div>
 
         <div class="ai-section">
@@ -2303,6 +2333,18 @@
             <div class="ai-panel"><div class="eyebrow">Organic Search</div><h4>Fragmented discoverability.</h4><p>Visibility was concentrated in specialty polymers, selective in aerospace and batteries, and absent from the first 30 organic results for the semiconductor and healthcare query sets tested.</p><div class="ai-ranking">SEARCH ≠ AI</div></div>
             <div class="ai-panel accent"><div class="eyebrow">AI Buyer Consideration</div><h4>A much broader market position.</h4><p>Across ChatGPT, Copilot, Gemini and Perplexity, Syensqo entered every tested supplier consideration set across five strategic markets.</p><div class="ai-ranking">20 / 20</div></div>
           </div>
+
+          <div class="ai-matrix" aria-label="Syensqo AI buyer consideration ranking matrix">
+            <div class="ai-matrix-grid">
+              <div class="head">Market</div><div class="head">ChatGPT</div><div class="head">Copilot</div><div class="head">Gemini</div><div class="head">Perplexity</div>
+              <div class="market">Specialty polymers</div><div class="rank">#1</div><div class="rank">#1</div><div class="rank">#1</div><div class="rank">#1</div>
+              <div class="market">Aerospace</div><div class="rank">#3</div><div class="rank">#3</div><div class="rank">#2</div><div class="rank">#2</div>
+              <div class="market">Semiconductors</div><div class="rank">#3</div><div class="rank">#2</div><div class="rank">#2</div><div class="rank">#1</div>
+              <div class="market">Batteries</div><div class="rank">#1</div><div class="rank">#1</div><div class="rank">#1</div><div class="rank">#1</div>
+              <div class="market">Healthcare</div><div class="rank">#2</div><div class="rank">#2</div><div class="rank">#3</div><div class="rank">#1</div>
+            </div>
+          </div>
+
           <div class="ai-metrics"><div class="ai-metric"><strong>8× #1</strong><span>First-place recommendations</span></div><div class="ai-metric"><strong>Top 3</strong><span>No ranking below #3</span></div><div class="ai-metric"><strong>5/5</strong><span>Strategic markets</span></div><div class="ai-metric"><strong>20/20</strong><span>Consideration sets</span></div></div>
         </div>
 
@@ -2310,6 +2352,13 @@
 
         <div class="ai-section">
           <div class="ai-section-head"><div class="section-label">04 / Entity Attribution</div><div><h3>Technology understood. Ownership misattributed.</h3><p>One recommendation separated “Solvay — Solef PVDF” from Syensqo. The technology was recognised correctly, but the ownership signal lagged behind the corporate change.</p></div></div>
+
+          <div class="ai-attribution">
+            <div class="ai-entity"><small>Legacy authority</small><strong>SOLVAY</strong><p>Inherited product and technology associations remain present in the evidence layer.</p></div>
+            <div class="ai-arrow">→</div>
+            <div class="ai-entity"><small>Current ownership</small><strong>SYENSQO</strong><p>The strategic task is to reconnect inherited technical authority to the contemporary corporate entity.</p></div>
+          </div>
+
           <div class="ai-panel"><div class="eyebrow">ENTITY-ATTRIBUTION LAG</div><h4>SOLVAY HERITAGE → SYENSQO OWNERSHIP</h4><p>Inherited products, technologies and market authority can remain associated with a former corporate entity even after ownership and brand architecture have changed.</p></div>
         </div>
 
