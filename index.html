@@ -1212,6 +1212,134 @@
   line-height:1 !important;
 }
 
+
+/* ===== FINAL / HOW I WORK ===== */
+.portfolio-final{
+  background:#f7f6f2;
+  color:#071b4a;
+  padding:110px 0 72px;
+  border-top:1px solid #d8d4ca;
+}
+.pf-wrap{
+  width:min(1180px, calc(100% - 80px));
+  margin:0 auto;
+}
+.pf-kicker{
+  font-size:12px;
+  line-height:1.2;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#f36f21;
+  margin-bottom:34px;
+}
+.portfolio-final h2{
+  margin:0;
+  font-size:clamp(46px, 5.5vw, 82px);
+  line-height:.96;
+  letter-spacing:-.055em;
+  font-weight:700;
+  max-width:1050px;
+}
+.pf-intro{
+  max-width:780px;
+  margin:42px 0 76px;
+  font-size:20px;
+  line-height:1.55;
+  color:#34415f;
+}
+.pf-columns{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-top:1px solid #cbc7bd;
+  border-bottom:1px solid #cbc7bd;
+}
+.pf-col{
+  min-height:245px;
+  padding:30px 24px 34px 0;
+}
+.pf-col + .pf-col{
+  border-left:1px solid #cbc7bd;
+  padding-left:24px;
+}
+.pf-num{
+  color:#f36f21;
+  font-size:12px;
+  letter-spacing:.12em;
+  font-weight:600;
+  margin-bottom:30px;
+}
+.pf-col p{
+  margin:0;
+  font-size:17px;
+  line-height:1.75;
+  color:#071b4a;
+}
+.pf-trajectory{
+  padding:74px 0 80px;
+  border-bottom:1px solid #cbc7bd;
+}
+.pf-trajectory .pf-kicker{margin-bottom:28px;}
+.pf-path{
+  font-size:clamp(22px,2.4vw,35px);
+  line-height:1.35;
+  font-weight:650;
+  letter-spacing:-.025em;
+}
+.pf-path span{
+  color:#f36f21;
+  display:inline-block;
+  padding:0 .18em;
+}
+.pf-closing{
+  padding:100px 0 28px;
+}
+.pf-closing h2{
+  max-width:1000px;
+}
+.pf-closing p{
+  max-width:850px;
+  margin:38px 0 46px;
+  font-size:20px;
+  line-height:1.55;
+  color:#34415f;
+}
+.pf-ctas{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.pf-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  padding:0 22px;
+  border:1px solid #071b4a;
+  color:#071b4a;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:.08em;
+}
+.pf-cta:hover{
+  background:#071b4a;
+  color:#fff;
+}
+@media(max-width:900px){
+  .pf-wrap{width:min(100% - 36px,1180px);}
+  .pf-columns{grid-template-columns:1fr 1fr;}
+  .pf-col:nth-child(3){border-left:0;border-top:1px solid #cbc7bd;padding-left:0;}
+  .pf-col:nth-child(4){border-top:1px solid #cbc7bd;}
+}
+@media(max-width:620px){
+  .portfolio-final{padding-top:72px;}
+  .pf-columns{grid-template-columns:1fr;}
+  .pf-col,.pf-col + .pf-col{border-left:0;border-top:1px solid #cbc7bd;padding:26px 0;}
+  .pf-col:first-child{border-top:0;}
+  .pf-intro,.pf-closing p{font-size:17px;}
+  .pf-path{line-height:1.6;}
+}
+
 </style>
 </head>
 
@@ -2651,21 +2779,51 @@
   <!-- FOOTER -->
 
   <footer id="contact">
-    <div class="container">
+    
+<section class="portfolio-final">
+  <div class="pf-wrap">
+    <div class="pf-kicker">HOW I WORK</div>
+    <h2>Strategy, creativity and execution — connected.</h2>
+    <p class="pf-intro">
+      I work where brand, product and communication meet.<br>
+      My role is usually to turn an ambiguous business problem into a clear proposition,
+      a communication system and work that can actually be delivered.
+    </p>
 
-      <h2>
-        Let’s build something<br>
-        worth remembering.
-      </h2>
-
-      <div class="footer-bottom">
-        <div>Ivan Popov</div>
-        <div>Marketing & Communications</div>
-        <div>Portfolio 2026</div>
+    <div class="pf-columns">
+      <div class="pf-col">
+        <div class="pf-num">01 — STRATEGY</div>
+        <p>Positioning<br>Market &amp; competitor analysis<br>Brand architecture<br>Go-to-market thinking</p>
       </div>
-
+      <div class="pf-col">
+        <div class="pf-num">02 — COMMUNICATION</div>
+        <p>Brand platforms<br>Campaign concepts<br>Content systems<br>Executive communications</p>
+      </div>
+      <div class="pf-col">
+        <div class="pf-num">03 — DIGITAL &amp; AI</div>
+        <p>Digital products<br>AI search intelligence<br>Research &amp; experimentation<br>AI-assisted workflows</p>
+      </div>
+      <div class="pf-col">
+        <div class="pf-num">04 — LEADERSHIP</div>
+        <p>Cross-functional teams<br>Creative direction<br>Agency management<br>From strategy to execution</p>
+      </div>
     </div>
-  </footer>
+
+    <div class="pf-trajectory">
+      <div class="pf-kicker">15+ YEARS ACROSS CONTENT, BRAND AND MARKETING</div>
+      <div class="pf-path">JOURNALISM <span>→</span> COPYWRITING <span>→</span> CONTENT <span>→</span> BRAND <span>→</span> MARKETING STRATEGY <span>→</span> AI</div>
+    </div>
+
+    <div class="pf-closing">
+      <h2>I build marketing systems,<br>not isolated deliverables.</h2>
+      <p>From understanding the market to defining the proposition, building the narrative and turning it into work people actually see.</p>
+      <div class="pf-ctas">
+        <a href="#" class="pf-cta">VIEW CV ↗</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="pf-cta">LINKEDIN ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
