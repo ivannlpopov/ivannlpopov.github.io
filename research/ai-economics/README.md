@@ -13,17 +13,19 @@ Can AI adoption improve corporate profitability while weakening consumer demand 
 
 ## Key findings
 
-Published estimates cited in the paper suggest annual business benefits of RUB 680 billion in 2026, rising to RUB 1.8–2.6 trillion in one to three years. A 2025 survey reports that 47% of large firms considered workforce reductions when adopting AI; this measures intentions, not actual layoffs.
+Published estimates cited in the paper suggest annual business benefits of €7.54 billion (RUB 680 billion) in 2026, rising to €19.95–28.81 billion (RUB 1.8–2.6 trillion) in one to three years. A 2025 survey reports that 47% of large firms considered workforce reductions when adopting AI; this measures intentions, not actual layoffs.
 
-The following are illustrative annual scenarios, not forecasts (RUB billion):
+The following are illustrative annual scenarios, not forecasts (EUR billion, rounded):
 
 | Scenario | Displaced workers | Immediate re-employment | Months without work | Pre-tax profit | Direct fiscal balance |
 |---|---:|---:|---:|---:|---:|
-| Favourable | 500,000 | 70% | 3 | +2,100 | +490.1 |
-| Base | 1,000,000 | 30% | 9 | +1,150 | −61.5 |
-| Adverse | 2,000,000 | 10% | 12 | −170 | −1,136.7 |
+| Favourable | 500,000 | 70% | 3 | +23.27 | +5.43 |
+| Base | 1,000,000 | 30% | 9 | +12.74 | −0.68 |
+| Adverse | 2,000,000 | 10% | 12 | −1.88 | −12.60 |
 
 At base-case profit and unchanged assumptions, the paper estimates a fiscal break-even displacement threshold of approximately 824,000 workers.
+
+The base-case annual TCO is €7.20 billion (RUB 650 billion). EUR equivalents use the Bank of Russia rate cited in the English edition: EUR 1 = RUB 90.2397 on 26 November 2026. Display values are rounded; model calculations remain in RUB. The Russian edition retains RUB figures.
 
 ## Methodology
 
