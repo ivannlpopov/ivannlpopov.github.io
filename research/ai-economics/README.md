@@ -8,10 +8,8 @@ Can AI adoption improve corporate profitability while weakening consumer demand 
 
 ## Publications
 
-- English (primary): [White paper](AI_Society_v3_EN.pdf)
-- Russian (supplementary): [White paper](AI_Society_v3_RU.pdf)
-
-**Publication status:** PDF files are awaiting repository upload.
+- English (primary): [White paper](AI_Society_EN.pdf)
+- Russian (supplementary): [White paper](AI_Society_RU.pdf)
 
 ## Key findings
 
